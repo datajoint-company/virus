@@ -1,0 +1,126 @@
+<svg height="185pt" viewBox="0.00 0.00 561.32 185.00" width="561pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 181)">
+<polygon fill="#ffffff" points="-4,4 -4,-181 557.3174,-181 557.3174,4 -4,4" stroke="transparent"/>
+<!-- virus.Virus -->
+<g class="node" id="node1">
+<title>virus.Virus</title>
+<g id="a_node1"><a xlink:title="virus_name           ------------------------------→ Construct→ VirusType→ Serotype→ VirusSourcevirus_catlog=null    virus_lot=null       virus_titer=null     virus_date=null      virus_notes=null     ">
+<polygon fill="#00ff00" fill-opacity="0.188235" points="254.7513,-35 183.1647,-35 183.1647,0 254.7513,0 254.7513,-35" stroke="#00ff00" stroke-opacity="0.188235"/>
+<text fill="#006400" font-family="arial" font-size="12.00" text-anchor="middle" x="218.958" y="-14.7994">virus.Virus</text>
+</a>
+</g>
+</g>
+<!-- virus.GeneElement -->
+<g class="node" id="node2">
+<title>virus.GeneElement</title>
+<g id="a_node2"><a xlink:title="gene_name            ------------------------------→ GeneElementTypefunction_description=null dna_source=null      risk=&quot;no known risk&quot; ">
+<polygon fill="#000000" fill-opacity="0.125490" points="537.4971,-106 436.4189,-106 436.4189,-71 537.4971,-71 537.4971,-106" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="486.958" y="-86.2495">virus.GeneElement</text>
+</a>
+</g>
+</g>
+<!-- virus.ConstructGene -->
+<g class="node" id="node7">
+<title>virus.ConstructGene</title>
+<g id="a_node7"><a xlink:title="→ Construct→ GeneElement">
+<polygon fill="#00ff00" fill-opacity="0.188235" points="449.8355,-35 324.0805,-35 324.0805,0 449.8355,0 449.8355,-35" stroke="#00ff00" stroke-opacity="0.188235"/>
+<text fill="#006400" font-family="arial" font-size="12.00" text-anchor="middle" x="386.958" y="-14.7994">virus.ConstructGene</text>
+</a>
+</g>
+</g>
+<!-- virus.GeneElement&#45;&gt;virus.ConstructGene -->
+<g class="edge" id="edge1">
+<title>virus.GeneElement-&gt;virus.ConstructGene</title>
+<path d="M462.2389,-70.9494C446.8541,-60.0262 427.1358,-46.0262 411.7393,-35.0947" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.VirusType -->
+<g class="node" id="node3">
+<title>virus.VirusType</title>
+<g id="a_node3"><a xlink:title="virus_type           ------------------------------virus_type_description=null ">
+<polygon fill="#000000" fill-opacity="0.125490" points="182.132,-106 97.784,-106 97.784,-71 182.132,-71 182.132,-106" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="139.958" y="-86.2495">virus.VirusType</text>
+</a>
+</g>
+</g>
+<!-- virus.VirusType&#45;&gt;virus.Virus -->
+<g class="edge" id="edge2">
+<title>virus.VirusType-&gt;virus.Virus</title>
+<path d="M159.4861,-70.9494C171.6401,-60.0262 187.2176,-46.0262 199.3808,-35.0947" fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.VirusSource -->
+<g class="node" id="node4">
+<title>virus.VirusSource</title>
+<g id="a_node4"><a xlink:title="virus_source         ">
+<polygon fill="#000000" fill-opacity="0.125490" points="294.1369,-106 199.7791,-106 199.7791,-71 294.1369,-71 294.1369,-106" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="246.958" y="-86.2495">virus.VirusSource</text>
+</a>
+</g>
+</g>
+<!-- virus.VirusSource&#45;&gt;virus.Virus -->
+<g class="edge" id="edge3">
+<title>virus.VirusSource-&gt;virus.Virus</title>
+<path d="M240.0367,-70.9494C235.7613,-60.1083 230.2907,-46.2366 225.9942,-35.3418" fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.Serotype -->
+<g class="node" id="node5">
+<title>virus.Serotype</title>
+<g id="a_node5"><a xlink:title="serotype             ------------------------------description=null     ">
+<polygon fill="#000000" fill-opacity="0.125490" points="79.8741,-106 .0419,-106 .0419,-71 79.8741,-71 79.8741,-106" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="39.958" y="-86.2495">virus.Serotype</text>
+</a>
+</g>
+</g>
+<!-- virus.Serotype&#45;&gt;virus.Virus -->
+<g class="edge" id="edge4">
+<title>virus.Serotype-&gt;virus.Virus</title>
+<path d="M80.1291,-72.5662C110.949,-60.3416 153.1181,-43.6153 182.8702,-31.8142" fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.GeneElementType -->
+<g class="node" id="node6">
+<title>virus.GeneElementType</title>
+<g id="a_node6"><a xlink:title="type                 ">
+<polygon fill="#000000" fill-opacity="0.125490" points="553.1771,-177 430.7389,-177 430.7389,-142 553.1771,-142 553.1771,-177" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="491.958" y="-157.2495">virus.GeneElementType</text>
+</a>
+</g>
+</g>
+<!-- virus.GeneElementType&#45;&gt;virus.GeneElement -->
+<g class="edge" id="edge5">
+<title>virus.GeneElementType-&gt;virus.GeneElement</title>
+<path d="M490.7221,-141.9494C489.9586,-131.1083 488.9817,-117.2366 488.2145,-106.3418" fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.Construct -->
+<g class="node" id="node8">
+<title>virus.Construct</title>
+<g id="a_node8"><a xlink:title="construct_name       ------------------------------→ ConstructSourceconstruct_notes=null ">
+<polygon fill="#00ff00" fill-opacity="0.188235" points="407.9795,-106 311.9365,-106 311.9365,-71 407.9795,-71 407.9795,-106" stroke="#00ff00" stroke-opacity="0.188235"/>
+<text fill="#006400" font-family="arial" font-size="12.00" text-anchor="middle" x="359.958" y="-85.7994">virus.Construct</text>
+</a>
+</g>
+</g>
+<!-- virus.Construct&#45;&gt;virus.Virus -->
+<g class="edge" id="edge6">
+<title>virus.Construct-&gt;virus.Virus</title>
+<path d="M325.1041,-70.9494C303.4115,-60.0262 275.6087,-46.0262 253.8997,-35.0947" fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.Construct&#45;&gt;virus.ConstructGene -->
+<g class="edge" id="edge7">
+<title>virus.Construct-&gt;virus.ConstructGene</title>
+<path d="M366.6322,-70.9494C370.7548,-60.1083 376.03,-46.2366 380.1731,-35.3418" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- virus.ConstructSource -->
+<g class="node" id="node9">
+<title>virus.ConstructSource</title>
+<g id="a_node9"><a xlink:title="construct_source     ">
+<polygon fill="#000000" fill-opacity="0.125490" points="412.3277,-177 297.5883,-177 297.5883,-142 412.3277,-142 412.3277,-177" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="354.958" y="-157.2495">virus.ConstructSource</text>
+</a>
+</g>
+</g>
+<!-- virus.ConstructSource&#45;&gt;virus.Construct -->
+<g class="edge" id="edge8">
+<title>virus.ConstructSource-&gt;virus.Construct</title>
+<path d="M356.194,-141.9494C356.9574,-131.1083 357.9343,-117.2366 358.7015,-106.3418" fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+</g>
+</svg>
