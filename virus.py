@@ -1,6 +1,6 @@
 import datajoint as dj
 
-schema = dj.schema('virus', locals())
+schema = dj.schema('virus')
 
 @schema
 class ConstructSource(dj.Lookup):
@@ -22,9 +22,8 @@ class Construct(dj.Manual):
 
 @schema
 class GeneElementType(dj.Lookup):
-    # type of the gene element type
     definition = """
-    type : varchar(64)  # type of the gene element
+    gene_element_type : varchar(64)  # type of the gene element
     """
     contents = [['promoter'], ['opsin'], ['calcium indicator'], ['voltage indicator'], ['reporter']]
 
@@ -37,7 +36,6 @@ class GeneElement(dj.Lookup):
     -> GeneElementType
     function_description = null : varchar(1024)  # description of the function of the gene
     dna_source = null  : varchar(256)   # source of the DNA
-    risk = "no known risk" : varchar(256)  # known risk to human beings
     """
 
 @schema
@@ -55,6 +53,7 @@ class VirusType(dj.Lookup):
     virus_type : varchar(32)  # type of virus
     ---
     virus_type_description = null : varchar(256)  # description of the virus type
+    virus_risk = "no known risk"  : varchar(256)  # descrition of risk to human beings
     """
 
 @schema
@@ -63,7 +62,7 @@ class Serotype(dj.Lookup):
     definition = """
     serotype : varchar(32)   # serotype
     ---
-    description = null : varchar(256)  # description of serotype
+    serotype_description = null : varchar(256)  # description of serotype
     """
     contents = [
         ['AAV2/1', ''],
