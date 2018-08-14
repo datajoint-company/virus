@@ -117,7 +117,7 @@ class Virus(dj.Manual):
     definition = """
     virus_id:               int          # virus identifier
     ---
-    virus_name:             varchar(256) # nickname of a virus
+    virus_name:             varchar(256) # nickname of the virus
     -> Construct
     -> VirusType
     -> Serotype
@@ -135,9 +135,9 @@ class Aliquoting(dj.Manual):
     # information of aliquot
     definition = """
     -> Virus
-    aliquoting_date:            date            # date when the aliquoting happens
+    aliquoting_date:            date            # date when the aliquoting was performed
     ---
-    aliquoting_person:          varchar(64)     # person that aliquots the virus
+    aliquoting_person:          varchar(64)     # person that aliquoted the virus
     amount_per_aliquot:         smallint        # in uL
     aliquoting_number:          smallint        # number of aliquots
     aliquoting_notes = null:    varchar(256)    # notes
